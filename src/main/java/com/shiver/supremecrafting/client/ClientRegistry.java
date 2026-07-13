@@ -16,10 +16,11 @@ import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
 
 import java.lang.reflect.Method;
 
-@Mod.EventBusSubscriber(modid = SupremeCrafting.MOD_ID)
+@Mod.EventBusSubscriber(modid = SupremeCrafting.MOD_ID, value = Side.CLIENT)
 public final class ClientRegistry {
     private ClientRegistry() {
     }
